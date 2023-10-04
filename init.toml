@@ -27,9 +27,11 @@
     automatic_update = true
     relativenumber = false
 
+    autocomplete_method = 'coc'
+
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
+name = 'coc'
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
@@ -37,6 +39,11 @@ auto_completion_tab_key_behavior = "smart"
 name = 'shell'
 default_position = 'top'
 default_height = 30
+
+[[layers]]
+name = 'lang#ruby'
+format_on_save = true
+enabled_linters = ['rubocop']
 
 [[custom_plugins]]
 repo = 'dracula/vim'
