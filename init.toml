@@ -45,6 +45,20 @@ name = 'lang#ruby'
 format_on_save = true
 enabled_linters = ['rubocop']
 
+[[layers]]
+name = "lang#python"
+enable_typeinfo = true
+format_on_save = true
+enabled_linters = ["python", "pylint"]
+
+[[layers]]
+name = "lsp"
+enabled_clients = ["pyright"]
+
 [[custom_plugins]]
-repo = 'dracula/vim'
+repo = "dracula/vim"
+merged = 0
+
+[[custom_plugins]]
+repo = "github/copilot.vim"
 merged = 0
