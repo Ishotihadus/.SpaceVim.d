@@ -27,6 +27,7 @@
     bootstrap_after = "init#after"
 
     relativenumber = false
+    automatic_update = true
 
 # Enable autocomplete layer
 [[layers]]
