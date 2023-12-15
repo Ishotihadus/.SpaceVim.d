@@ -22,16 +22,17 @@
     statusline_iseparator = "arrow"
     buffer_index_type = 4
     enable_tabline_filetype_icon = true
-    enable_statusline_mode = false
+    enable_statusline_mode = true
 
-    bootstrap_after = "init#after"
-
+    automatic_update = true
     relativenumber = false
     automatic_update = true
 
+    autocomplete_method = 'coc'
+
 # Enable autocomplete layer
 [[layers]]
-name = 'autocomplete'
+name = 'coc'
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
@@ -40,6 +41,29 @@ name = 'shell'
 default_position = 'top'
 default_height = 30
 
+[[layers]]
+name = 'lang#ruby'
+format_on_save = true
+enabled_linters = ['rubocop']
+
+[[layers]]
+name = "lang#python"
+enable_typeinfo = true
+format_on_save = true
+enabled_linters = ["python", "pylint"]
+
+[[layers]]
+name = "lsp"
+enabled_clients = ["pyright"]
+
 [[custom_plugins]]
-repo = 'dracula/vim'
+repo = "dracula/vim"
+merged = 0
+
+[[custom_plugins]]
+repo = "github/copilot.vim"
+merged = 0
+
+[[custom_plugins]]
+repo = "davidhalter/jedi-vim"
 merged = 0
