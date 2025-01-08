@@ -50,11 +50,13 @@ enabled_linters = ['rubocop']
 name = "lang#python"
 enable_typeinfo = true
 format_on_save = true
-enabled_linters = ["python", "pylint"]
 
 [[layers]]
 name = "lsp"
-enabled_clients = ["pyright"]
+filetypes = ["python"]
+
+[layers.override_cmd]
+python = ["ruff", "server"]
 
 [[custom_plugins]]
 repo = "dracula/vim"
@@ -62,8 +64,4 @@ merged = 0
 
 [[custom_plugins]]
 repo = "github/copilot.vim"
-merged = 0
-
-[[custom_plugins]]
-repo = "davidhalter/jedi-vim"
 merged = 0
