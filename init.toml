@@ -28,23 +28,23 @@
     relativenumber = false
     automatic_update = true
 
-    autocomplete_method = 'coc'
+    autocomplete_method = "coc"
 
 # Enable autocomplete layer
 [[layers]]
-name = 'coc'
+name = "coc"
 auto_completion_return_key_behavior = "complete"
 auto_completion_tab_key_behavior = "smart"
 
 [[layers]]
-name = 'shell'
-default_position = 'top'
+name = "shell"
+default_position = "top"
 default_height = 30
 
 [[layers]]
-name = 'lang#ruby'
+name = "lang#ruby"
 format_on_save = true
-enabled_linters = ['rubocop']
+enabled_linters = ["rubocop"]
 
 [[layers]]
 name = "lang#python"
