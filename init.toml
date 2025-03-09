@@ -30,7 +30,13 @@
 
     autocomplete_method = "coc"
 
-# Enable autocomplete layer
+    bootstrap_before = 'myspacevim#before'
+    bootstrap_after = 'myspacevim#after'
+
+[[layers]]
+name = "ui"
+enable_scrollbar = true
+
 [[layers]]
 name = "coc"
 auto_completion_return_key_behavior = "complete"
